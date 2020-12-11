@@ -8,7 +8,9 @@ padding-left: 0px;
 .azul {width: 50%;} */Estilo para poder visulizar el comportamiento xs desde el navegador. Deberia ser a 768px pero no se vería en el navegador.
 }
 .columnaverde {background-color:#00ff00;border: 2px solid white;color:white;height:30px;}
+.columnafinal {background-color:grey;border:1px solid black;border-radius: 30px;height:60px;padding-top:20px;padding-bottom:20px;}
 #izquierda {background-color: #ff0000;border: 2px solid white;}
 #rosa {border: 2px solid white;background-color:pink;height:30px;}
 .marron {background-color:#DEB887;float:left;border: 2px solid white;height:200px;}
 .azul {background-color:blue;float:left;border: 2px solid white;height:100px;}
+#pie {text-align:center;color:white;font-weight:bold;}
