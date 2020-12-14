@@ -1,34 +1,120 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
- <head>
- <!-- Página 1 del ejercicio GIT creada por Laura -->
- <title>Ejercicio GIT: Página 1</title>
- <meta charset="utf-8">
- <meta name="description" content="Este es un documento HTML5"> 
- <link rel="stylesheet" href="css/estilos_pagina1.css" type="text/css">
- <style>
+<head>
+<style>
+/*Menu responsivo*/
+#menuA {display:none;}
+/*.showhim {display:none;}*/ 
+nav{
+    margin: 0rem 0rem 0rem 0rem;
+}
 
- </style>
-</head>
-<br>
+        nav a{
+            border-radius: 5px; padding: 2px 5px 5px 5px;  
+            text-decoration: none; color: #000000;    /* No visitado */
+            background: #FFFFFF;
+        }
+        nav a.visited{
+            text-decoration: none; color: #696969;    /* Visitado */
+        }
+        nav a.active{
+            text-decoration: none; color: #800000;    /* Ultimo visitado */
+        }
+        nav a:hover{
+            text-decoration: none; color: #FFFFFF;    /* Color paso raton */
+            background: #FF0000;
+        }
+        
+#menuA {   
+    position: absolute; 
+    
+    font-weight: 900;
+    font-family:verdana,arial; /*tipo de letra*/  
+	
+    width: 30%; 
+    min-width: 200px; 
+    line-height: 20pt; /*separación entre lineas*/ 
+    z-index: 4; 
+}  
+    
+.showme{                 /* Capa emergente */ 
+    position: absolute; 
+    margin-left: -17rem;
+	margin-top: -1rem;
+    padding: 0.5rem 1.5rem 0.5rem 0.3rem; 
+    width: 12rem; 
+    background-color: #000; 
+    display: none; 
+    text-align: left; 
+    line-height: 2.5rem;
+    border-radius: 5px; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+} 
+.showhim:hover .showme{ 
+    display: block; 
+}
 
+.menumov {
+    position: absolute;
+    text-align: center;
+    margin-top:-3.3rem;
+	margin-left:-267px;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    text-decoration: none; 
+    color: #FFF; 
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    background: #FF0000;
+}  
+
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/estilos_pagina1.css" />
+<title> Diseño responsive \ Ejercicio 12 | Diseño 1</title>
+<meta charset="utf-8" />
+
+</head> 
 <body>
- <header>
-  <h1>Página 122323</h1>
- </header>
- 
+<main>
+<header>
+<div id="cabecera">
+<div id="tuweb">
+<p id="logo">WEB SECTOR TURÍSTICO [GRUPO 2]</p>
+</div>
 
- <footer>
-       <!-- ADDRESS:  representa información de contacto //  SMALL:  representa letra pequeña  --> 
-        <address>León, España</address>
-        <small>&copy; Derechos Reservados 2020</small>
- </footer> 
- </div>
-  </section>
- </main>
- 
-</body>
+</header>
+
+<section>
+
+<div id="izquierda">
+<h2 id="titulo">PAGINA SOBRE NOSOTROS</h2>
+<p class="articulo">Somos una pagina web del sector turístico</p>
+<p class="articulo">Nos dedicamos a X.</p>
+</div>
+<!--<div id="medio">
+<h2 id="email">SUSCRIBETE AL NEWSLETTER</h2>
+ <form name="correo">
+<input type="email" id="tuemail" size="35" required />
+<input id="botonform" type="submit" value="BOTÓN" />
+ </form>
+ </div>-->
+<!--<div id="derecha">
+<button type="button" onclick="alert('MIAUUU')" class="boton">BOTÓN NUMERO UNO</button>
+<button class="boton" type="button" onclick="alert('YUPIIIII')">BOTÓN NUMERO DOS</button>
+</div> -->
+</section>	
+<hr>
+<section>
+ <h1>Aquí hay que poner lo que cada uno haya creado</h1>
+</section>
+
+</main>
+<div id="pie">
+<footer>Template by Jesus Dominguez. 2020 All rights reserved.</footer>                  
+</div>
+</body>  
 </html>
-
-
-
