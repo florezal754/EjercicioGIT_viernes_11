@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <style>
-/*Menu responsivo*/
+/*Menu responsivo*/ 
 #menuA {display:none;}
 /*.showhim {display:none;}*/ 
 nav{
@@ -214,16 +214,73 @@ ul{justify-content: center;}
 <p class="articulo">Bienvenid@ ¿Eres viajer@? En nuestro site encontrarás las mejor ofertas para que tus viajes se conviertan en los mejores recuerdos.</p>
 <p class="articulo">Sólo trabajamos con los mejores hoteles, restaurantes, balnearios y empresas de ocio de las principales ciudades del mundo</p>
 </div>
-
+<!--<div id="medio">
+<h2 id="email">SUSCRIBETE AL NEWSLETTER</h2>
+ <form name="correo">
+<input type="email" id="tuemail" size="35" required />
+<input id="botonform" type="submit" value="BOTÓN" />
+ </form>
+ </div>-->
+<!--<div id="derecha">
+<button type="button" onclick="alert('MIAUUU')" class="boton">BOTÓN NUMERO UNO</button>
+<button class="boton" type="button" onclick="alert('YUPIIIII')">BOTÓN NUMERO DOS</button>
+</div> -->
 </section>	
 <hr>
-<section>
-<br />
- <h1>¿QUE DESTINO ELEGIR?</h1>
- <p id="venta">No te preocupes por el destino a escoger ya que nosotros te ayudaremos en el proceso de tomar la decisión. 
- Solo necesitas ponerte en contacto con nosotros indicándonos tus preferencias para que  en base a tus gustos y experiencias ayudarte a tomar la decisión 
- correcta para unas vacaciones inolvidables.</p>
-</section>
+      <section>
+		<h1><span><strong><legend>  CONTACTO </legend> </span></strong></h1> </br>
+                <fieldset>
+				<legend> informacion del usuario </legend>
+	<p><h1>Deje sus datos y nos pondremos en contacto con usted</h1>
+	</p>
+				
+	 <p>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required  />
+      </p>
+	  
+	   <p>
+        <label for="nombre">localidad: </label>
+        <input type="text" name="localidad" id="localidad" required  />
+      </p>
+ 
+ 
+      <p>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" min="0" max="100" />
+      </p>
+
+			<p>
+			<label for="nombre">localidad: </label>
+        <input type="text" name="localidad" id="localidad" required  />	</p>		
+	
+		<input type="date" name="fecha" value="2020-11-27" />
+		
+		<p>
+					   <label> sugerencias: </label><br/>
+						</p>
+                <form name="formulario" method="get" action="procesar.php">
+                             <p><label>  <textarea name="texto" cols="50" rows="6" spellcheck="false" ></textarea></label></p>
+						
+      
+	    <p>
+    <label for="lista de sleccion">horario de llamada: </label><br/>
+    <select name="opcion" id="listado">
+	<option value="0">selecciona </option>
+      <option value="1">mañana</option>
+      <option value="2">tarde</option>
+	  
+	 </p></br>
+						
+ 
+   <p><input type="submit">  <input type="reset"></p>
+  
+  
+
+                     
+                </form>
+                
+        </section>
 
 </main>
 <div id="pie">
