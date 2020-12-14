@@ -29,7 +29,7 @@
     }
     h6{
         float: left;
-        margin-left: 20px;
+
     }
     input{
          float: right;
@@ -46,9 +46,7 @@
     .block .col-md-5 {
         margin-left: 100px;
     }
-    h6{
-        w
-    }
+
 </style>
 
 
@@ -84,29 +82,79 @@
         </div>
         <div class="left col-lg-6 col-md-6 col-sm-6">
             <style>
-                input{
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-                }
-                p{
-                    margin-right:20px ;
-                }
+             input{
+                 margin-bottom: 10px;
+             }
+
                 .membership{
                     margin-left: 10px;
                     margin-top: 20px;
                 }
                 .noticias h6{
-                   margin-left: 45px;
+                    padding-left: 25px;}
+
+             .noticias input{
+                    margin-right: 20px;
+                }
+                .noticias p{
+                margin-right: 10px
+             }
+                .agree p{
+                    margin-right: 10px;
+                    margin-left: 25px;
+                }
+             .agree input{
+
+                    margin-left: 25px;
+
+                }
+                img{
+                height: 40px;
+                    width: 100px;
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-left: 25px;
+                }
+                .rowinput{
+                    margin-left: 25px;
+
+                }
+                .text{
+                    margin-left: 25px;
+                    min-height: 125px;
+                }
+                h5{
+                    margin-left: 25px;
                 }
 
             </style>
             <div class="row membership">
-                <h6 class="col-lg-3 col-md-3 col-sm-3">tipo de afiliación</h6>
-              <p>gold membership</p>  <input type="radio" name="membership" value="golg">
-                <p>silver membership</p>  <input type="radio" name="membership" value="silver">
+                <h6 class="col-lg-3 col-md-3 col-sm-3">tipo de afiliación :</h6>
+              <p class="col-lg-3">gold membership</p>  <input class="col-1" type="radio" name="membership" value="golg">
+                <p class="col-lg-3">silver membership</p>  <input class="col-1" type="radio" name="membership" value="silver">
             </div>
             <div class="row noticias">
-                <h6 class="col-lg-5 col-md-5 col-sm-5">enviar me las noticias</h6>
+                <h6 class="col-lg-4 col-md-5 col-sm-5">enviar me las noticias :</h6>
+               <p>si, me envias toda</p> <input type="radio" name="noticia" value="yes">
+                <p>no necesito</p><input type="radio" name="noticia" value="no">
+            </div>
+            <div class="agree row">
+                <p>iread and agree to all of the terms and conditions</p> <input type="checkbox">
+            </div>
+            <div class="row cachpa">
+                <div class="cachparight col-lg-12">
+                    <img class="col-lg-8" src="">
+                </div>
+                <div class="row rowinput">
+                    <input class="3" type="text" placeholder="escriba lo que veis en la foto">
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <h5>escribas tu problema aqui</h5>
+                <textarea class="col-lg-11 text" type="text"></textarea>
             </div>
         </div>
     </div>
