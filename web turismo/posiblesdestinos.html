@@ -2,6 +2,64 @@
 <html lang="es">
 <head>
 <style>
+/*GALERÍA DE IMAGENES*/
+.galeria {
+float:right;
+background-color:black;
+  height: calc( 320px + 3em);
+  width: 800px;
+  margin:1em auto;
+  border: 1px solid #555;
+  position: relative;  
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(8):checked ~ img:nth-of-type(8) {
+  opacity: 1;
+}
+
+
+  
 /*Menu responsivo*/
 #menuA {display:none;}
 /*.showhim {display:none;}*/ 
@@ -210,25 +268,35 @@ ul{justify-content: center;}
 <section>
 
 <div id="izquierda">
-<h2 id="titulo">COMIENZA TU VIAJE</h2>
-<p class="articulo">Bienvenid@ ¿Eres viajer@? En nuestro site encontrarás las mejor ofertas para que tus viajes se conviertan en los mejores recuerdos.</p>
-<p class="articulo">Sólo trabajamos con los mejores hoteles, restaurantes, balnearios y empresas de ocio de las principales ciudades del mundo</p>
+<h2 id="titulo">NO TE LO PIERDAS</h2>
+<p class="articulo">¿Quieres ideas? Mira nuestra galería de fotos para hacerte una pequeña idea de las vacaciones que tendrás.</p>
+<p class="articulo">Turismo de sol y playa | Turismo cultural | Turismo urbano | Turismo rural | Turismo exótico y mucho más...</p>
+<p class="articulo">Porque la vida es para disfrutarla, no lo dudes y...</p> 
+<p class="articulo">Regálate el viaje de tus sueños. Porque tú te lo mereces.</p>
 </div>
-<!--<div id="medio">
-<h2 id="email">SUSCRIBETE AL NEWSLETTER</h2>
- <form name="correo">
-<input type="email" id="tuemail" size="35" required />
-<input id="botonform" type="submit" value="BOTÓN" />
- </form>
- </div>-->
-<!--<div id="derecha">
-<button type="button" onclick="alert('MIAUUU')" class="boton">BOTÓN NUMERO UNO</button>
-<button class="boton" type="button" onclick="alert('YUPIIIII')">BOTÓN NUMERO DOS</button>
-</div> -->
+
 </section>	
 <hr>
 <section>
- <h1>Aquí hay que poner lo que cada uno haya creado</h1>
+ 
+  <div class="galeria">
+    <input type="radio" name="navegacion" id="_1" checked>
+    <input type="radio" name="navegacion" id="_2">
+    <input type="radio" name="navegacion" id="_3">
+    <input type="radio" name="navegacion" id="_4">
+	<input type="radio" name="navegacion" id="_5">
+    <input type="radio" name="navegacion" id="_6">
+    <input type="radio" name="navegacion" id="_7">
+    <input type="radio" name="navegacion" id="_8"> 
+    <img src="img/galeria1.jpg" width="800" height="320" alt="1" />
+    <img src="img/galeria2.jpg" width="800" height="320" alt="2"  />
+    <img src="img/galeria3.jpg" width="800" height="320" alt="3" />
+    <img src="img/galeria4.jpg" width="800" height="320" alt="4" />
+	<img src="img/galeria5.jpg" width="800" height="320" alt="5" />
+    <img src="img/galeria6.jpg" width="800" height="320" alt="6"  />
+    <img src="img/galeria7.jpg" width="800" height="320" alt="7" />
+    <img src="img/galeria8.jpg" width="800" height="320" alt="8" />
+  </div>
 </section>
 
 </main>
