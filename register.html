@@ -1,165 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <title> WEB SECTOR TURÍSTICO [GRUPO 2]</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un documento HTML5">
+    <!-- ENLACE DESCARGA Bootstrap:  https://getbootstrap.com/docs/4.0/getting-started/download/ -->
+    <!-- NECESARIO para el Bootstrap y que sea responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
-    <title>registerar pagina</title>
 </head>
 <body>
-<style>
-    .container{
-        border: 1px solid black;
-    }
-    b{
-        font-size: 15pt;
-        text-align: center;
-    }
-    legend{
-        text-align: center;
-    }
-    .right{
-        min-height: 400px;
-        border-right: 1px solid  black;
-    }
-    .content{
-        border-top: 1px solid black;
-    }
-    h6{
-        float: left;
-
-    }
-    input{
-         float: right;
-    }
-    .input{
-        margin-left: 50px;
-        display: inline-block;
-        height: 30px;}
-
-    .block{
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .block .col-md-5 {
-        margin-left: 100px;
-    }
-
-</style>
 
 
-<div class="container header">
-    <fieldset class="row col-lg-12 col-md-12 col-sm-12" >
-        <legend><b>registerar aqui</b> </legend>
+<br/><br/>
 
-    </fieldset>
-    <div class="row content" >
-        <div >
-            <div class="block row">
-            <h6 >nombre</h6>
-            <input type="text" >
+
+
+<div   class="container">
+    <style>
+        .unit{
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        @media (max-width: 769px) {
+            .unit{
+                margin:0;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+        }
+        .marron{
+            height: 400px !important;
+        }
+
+
+    </style>
+
+
+
+    <div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 columnaverde"></div></div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="izquierda"></div>
+        <div class="col-xs-4 col-sm-10 col-md-10 col-lg-10" id="derecha">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="rosa"></div>
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 marron">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12unit">
+                    <div class="row unit">
+                        <h5  class="col-lg-3 col-md-3 col-sm-12 unit">nombre :</h5>
+                        <input class="col-lg-5 col-md-5 col-sm-10 unit" type="text">
+                    </div>
+                    <div class="row unit">
+                        <h5  class="col-lg-3 col-md-3 col-sm-12 unit">apellidos :</h5>
+                        <input class="col-lg-5 col-md-5 col-sm-10 unit" type="text">
+                    </div><div class="row unit">
+                    <h5  class="col-lg-3 col-md-3 col-sm-12 unit">correo electronico :</h5>
+                    <input class="col-lg-5 col-md-5 col-sm-10 unit" type="text">
+                </div><div class="row unit">
+                    <h5  class="col-lg-3 col-md-3 col-sm-12 unit">numero de contacto :</h5>
+                    <input class="col-lg-5 col-md-5 col-sm-10 unit" type="text">
+                </div><div class="row unit">
+                    <h5  class="col-lg-3 col-md-3 col-sm-12 unit">direction :</h5>
+                    <input class="col-lg-5 col-md-5 col-sm-10 unit" type="text">
+                </div>
+                </div>
             </div>
-            <div class="block row">
-            <h6 class=>apellidos</h6>
-            <input  type="text" >
-            </div>
-            <div class="block row ">
-            <h6 >correo electronico</h6>
-            <input  type="text" >
-            </div>
-            <div class="block row">
-            <h6 >region</h6>
-            <input class=" input" type="text" >
-            </div> <div class="block row">
-            <h6 class=>ciudad</h6>
-            <input class="col-lg-5 col-md-5 col-sm-5 input" type="text" >
-            </div> <div class="block row">
-            <h6 class="col-lg-3 col-md-1 col-sm-1">direction</h6>
-            <textarea class="col-lg-5 col-md-5 col-sm-5 input " style="height:auto " type="text" ></textarea>
-            </div>
-        </div>
-        <div class="left col-lg-6 col-md-6 col-sm-6">
             <style>
-             input{
-                 margin-bottom: 10px;
-             }
-
-                .membership{
+                .tittulo{
                     margin-left: 10px;
-                    margin-top: 20px;
-                }
-                .noticias h6{
-                    padding-left: 25px;}
-
-             .noticias input{
-                    margin-right: 20px;
-                }
-                .noticias p{
-                margin-right: 10px
-             }
-                .agree p{
-                    margin-right: 10px;
-                    margin-left: 25px;
-                }
-             .agree input{
-
-                    margin-left: 25px;
-
                 }
                 img{
-                height: 40px;
-                    width: 100px;
-                    margin-bottom: 10px;
                     display: block;
-                    margin-left: 25px;
-                }
-                .rowinput{
-                    margin-left: 25px;
+                    margin-left: 30px;
+                    margin-right: 10px;
+                    min-height: 10px;
+                    width: 20px;
 
                 }
-                .text{
-                    margin-left: 25px;
-                    min-height: 125px;
-                }
-                h5{
-                    margin-left: 25px;
+                .unit1{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
                 }
 
+                .agree{
+                    margin-left: 10px;
+                }
+                textarea{
+                    margin-left: 10px;
+                    width: 400px;
+                    height: 100px;
+
+                }
+                @media (max-width: 769px){
+
+                    .unit1{
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .agree{
+                        margin-left: 10px;
+                    }
+                    img{
+                        display: block;
+                        min-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    input{
+                        display: block;
+                        width: 100px;
+                    }
+                    .chek{
+                        float: left;
+                        display: block;
+                        width: 5px;
+                    }
+                    textarea{
+                        display: block;
+                        margin-left: 10px;
+                        width: 300px;
+                        height: 100px;
+
+                    }
+                    .tittulo{
+                        margin-left: 10px;
+                    }
+
+                }
             </style>
-            <div class="row membership">
-                <h6 class=>tipo de afiliación :</h6>
-              <p class=>gold membership</p>  <input class="col-1" type="radio" name="membership" value="golg">
-                <p class="col-lg-3">silver membership</p>  <input class="col-1" type="radio" name="membership" value="silver">
-            </div>
-            <div class="row noticias">
-                <h6 class="col-lg-4 col-md-5 col-sm-5">enviar me las noticias :</h6>
-               <p>si, me envias toda</p> <input type="radio" name="noticia" value="yes">
-                <p>no necesito</p><input type="radio" name="noticia" value="no">
-            </div>
-            <div class="agree row">
-                <p>iread and agree to all of the terms and conditions</p> <input type="checkbox">
-            </div>
-            <div class="row cachpa">
-                <div class="cachparight col-lg-12">
-                    <img class="col-lg-8" src="">
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 marron">
+                <div class="row unit1">
+                    <img style="background-color: black;" class="col-lg-4 col-md-4  col-xs-4 col-sm-4" src=""> <input  class="col-lg-6 col-md-4 col-sm-6 col-xs-6" type="text" placeholder="escriba lo que veis en la foto foto">
                 </div>
-                <div class="row rowinput">
-                    <input class="3" type="text" placeholder="escriba lo que veis en la foto">
+                <div class="row agree">
+                    <p class='col-lg-9 col-md-6 col-sm-8 input'>i read and agree all of the terms and condition</p>
+                    <input class="col-lg-1 col-md-1 col-sm-1 chek" type="checkbox">
                 </div>
-
-
-
+                <div class="tittulo">
+                    <p class="col-lg-8 col-md-6 col-sm-6  ">escriba lo que buscas</p>
+                    <textarea class="col-lg-8 col-md-8 col-sm-8" type="text"></textarea>
+                </div>
+                <style>
+                    .submit{
+                        margin-top: 50px;
+                    }
+                </style>
+                <div class="row submit">
+                    <button style="margin: 0 auto;">submit</button></div>
             </div>
-            <div class="row">
-                <h5>escribas tu problema aqui</h5>
-                <textarea class="col-lg-11 text" type="text"></textarea>
-            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 azul"> </div>
+
         </div>
     </div>
 
+    <div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 columnafinal">
+        <footer><p id="pie">Turismoinformatico®™  2020 © Todos los derechos reservados</p></footer>
+    </div></div>
 </div>
+
+
+
 
 </body>
 </html>
